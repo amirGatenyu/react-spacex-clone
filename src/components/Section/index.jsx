@@ -1,16 +1,23 @@
 import React from "react";
+import Button from "../Button";
 import "./section.scss";
 
 export default function Section(props) {
   return (
     <div className="section">
-      <div className="background">
-        <div className="description">
-          <span className="h1">{props.H1Text}</span>
-          <span className="h2">{props.H2Text}</span>
-          <button className="btn-replay">
-            <span className="inner-text">{props.BtnReplay}</span>
-          </button>
+      <div
+        className="background"
+        style={{ backgroundImage: `url("${props.backgroundImage}")` }}
+      >
+        <div className="section-inner">
+          <div className="inner-right-bottom">
+            <div className="section-eyebrow-header">{props.eyebrowText}</div>
+            <div className="section-header">{props.headerText}</div>
+            <Button
+              text="Replay"
+              externalLink="https://www.spacex.com/launches/"
+            />
+          </div>
         </div>
       </div>
       <div className="section-inner"></div>
