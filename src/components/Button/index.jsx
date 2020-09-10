@@ -6,7 +6,9 @@ export default function index(props) {
   return (
     <React.Fragment>
       <a href={props.externalLink}>
-        <button onClick={props.onClick}>{props.text}</button>
+        <button className="primery-btn" onClick={props.onClick}>
+          {props.text}
+        </button>
       </a>
     </React.Fragment>
   );
