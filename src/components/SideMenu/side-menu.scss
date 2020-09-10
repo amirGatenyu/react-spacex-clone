@@ -1,0 +1,16 @@
+.side-menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  //   width: 290px;
+  max-width: 0px;
+  overflow-x: hidden;
+  background-color: #000;
+  transition: max-width 0.5s ease;
+  z-index: 99;
+}
+
+.side-menu-container.open {
+  max-width: 290px;
+}

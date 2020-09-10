@@ -20,7 +20,6 @@ export default function Section(props) {
           </div>
         </div>
       </div>
-      <div className="section-inner"></div>
     </div>
   );
 }
