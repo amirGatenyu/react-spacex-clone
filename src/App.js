@@ -4,7 +4,7 @@ import TopBar from "./components/TopBar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ overflowX: "hidden" }}>
       <TopBar />
       <Routes />
     </div>

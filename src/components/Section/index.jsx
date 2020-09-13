@@ -7,10 +7,16 @@ export default function Section(props) {
     <div className="section">
       <div
         className="background"
-        style={{ backgroundImage: `url("${props.backgroundImage}")` }}
+        style={{
+          backgroundImage: `url("${props.backgroundImage}")`,
+        }}
       >
         <div className="section-inner">
-          <div className="inner-right-bottom">
+          <div
+            className={
+              props.alignRight ? "inner-right-bottom" : "inner-left-bottom"
+            }
+          >
             <div className="section-eyebrow-header">{props.eyebrowText}</div>
             <div className="date">{props.starShipLanding}</div>
             <div className="section-header">{props.headerText}</div>

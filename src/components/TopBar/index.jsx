@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Turn as Hamburger, Turn } from "hamburger-react";
+import { Turn } from "hamburger-react";
 import { ReactComponent as Logo } from "../../assets/icons/spacex-logo.svg";
 import SideMenu from "../SideMenu";
 import DarkenBackground from "../DarkenBackground";
+import { Link } from "react-router-dom";
 import "./top-bar.scss";
 
 export default function TopBar() {
@@ -14,9 +15,9 @@ export default function TopBar() {
       <div className="top-bar-container">
         <div className="top-bar-space"></div>
         <div className="top-bar-inner">
-          <a href="">
+          <Link to="/">
             <Logo />
-          </a>
+          </Link>
           <Turn
             toggled={open}
             toggle={setOpen}

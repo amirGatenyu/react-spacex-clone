@@ -2,8 +2,10 @@
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
   .background {
-    // background-image: url("../../assets/images/starlink_11_mobile.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,24 +15,40 @@
       margin: 0 auto;
       position: relative;
       height: 100%;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: Arial, Verdana, sans-serif;
+      font-weight: 700;
       .inner-right-bottom {
         bottom: 15%;
         right: 50px;
         position: absolute;
         text-align: right;
-        text-transform: uppercase;
-        font-family: Arial, Verdana, sans-serif;
-        font-weight: 700;
         .section-eyebrow-header {
           text-align: left;
-          color: #fff;
           font-size: 13.5px;
           letter-spacing: -0.5px;
           margin-bottom: 8px;
           padding-left: 17%;
         }
         .section-header {
-          color: #fff;
+          font-size: 30px;
+          letter-spacing: -2px;
+          margin-bottom: 30px;
+        }
+      }
+      .inner-left-bottom {
+        bottom: 15%;
+        left: 24px;
+        position: absolute;
+        text-align: left;
+        .section-eyebrow-header {
+          text-align: left;
+          font-size: 13.5px;
+          letter-spacing: -0.5px;
+          margin-bottom: 8px;
+        }
+        .section-header {
           font-size: 30px;
           letter-spacing: -2px;
           margin-bottom: 30px;

@@ -7,6 +7,7 @@ import StarShip from "../../assets/images/starshipliftoff_mobile1.webp";
 import ReturningHuman from "../../assets/images/home_demo2_mobile.webp";
 import IssDocking from "../../assets/images/iss_docking_sim.webp";
 import NasaSelects from "../../assets/images/home_moon_mobile.webp";
+
 import "./home.scss";
 
 export default function Home(props) {
@@ -17,15 +18,14 @@ export default function Home(props) {
         headerText="Starlink Mission"
         backgroundImage={StarlinkBackground}
         text="replay"
+        alignRight
       />
-      <div className="section-two">
-        <Section
-          eyebrowText="Recent lunch"
-          headerText="SAOCOM 1B Mission"
-          backgroundImage={Saoc}
-          text="replay"
-        />
-      </div>
+      <Section
+        eyebrowText="Recent lunch"
+        headerText="SAOCOM 1B Mission"
+        backgroundImage={Saoc}
+        text="replay"
+      />
       <Section
         eyebrowText="Mission Complete"
         headerText="Crew Dragon Returns from Space Station"
