@@ -9,8 +9,45 @@
   background-color: #000;
   transition: max-width 0.5s ease;
   z-index: 99;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
 }
 
 .side-menu-container.open {
-  max-width: 290px;
+  max-width: 590px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .inner-side-menu {
+    margin: 55px 20px;
+    text-align: end;
+    font-weight: lighter;
+  }
+  .inner-side-menu a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .inner-side-menu hr {
+    height: 1px;
+    width: 250px;
+    border-width: 0px;
+    color: gray;
+    background-color: gray;
+    opacity: 0.3;
+  }
 }
+
+// .side-menu-container.close {
+//   max-width: 590px;
+//   .inner-side-menu a {
+//     display: block;
+//     margin: 0 100px;
+//     text-decoration: none;
+//     color: white;
+//     text-transform: uppercase;
+//     color: red;
+//   }
+// }
