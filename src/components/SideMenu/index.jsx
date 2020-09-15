@@ -65,36 +65,6 @@ export default function SideMenu(props) {
           </li>
         </ul>
       </div>
-      {/* <div
-        className={
-          props.close ? "side-menu-container close" : "side-menu-container"
-        }
-      >
-        <div className="inner-side-menu">
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-          <a href="#">falcon 9</a>
-          <hr />
-        </div>
-      </div> */}
     </div>
   );
 }
