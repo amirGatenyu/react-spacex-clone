@@ -87,8 +87,10 @@
     .below-image-section {
       padding: 40px 20px;
       color: #fff;
+
       .inner-left-bottom {
         text-align: left;
+
         .description {
           font-weight: 200;
           font-size: 15px;
@@ -96,6 +98,7 @@
           letter-spacing: -0.4px;
           text-transform: none;
           margin-bottom: 30px;
+          letter-spacing: -0.2px;
         }
 
         .section-eyebrow-header {
@@ -106,8 +109,9 @@
         }
         .section-header {
           font-size: 30px;
-          letter-spacing: -2px;
+          letter-spacing: 1px;
           margin-bottom: 30px;
+          font-weight: 700;
         }
       }
     }
