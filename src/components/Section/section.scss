@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: black;
     width: 100%;
     height: 100%;
     .section-inner {
@@ -38,10 +39,37 @@
         }
       }
       .inner-left-bottom {
+        width: 310px;
         bottom: 15%;
         left: 24px;
         position: absolute;
         text-align: left;
+
+        .section-image {
+          height: 360px;
+          width: 100%;
+          padding: 10px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        .image-bottom {
+          width: 100%;
+          height: 350px;
+          padding: 25px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        .description {
+          font-weight: 200;
+          font-size: 15px;
+          line-height: 25px;
+          letter-spacing: -0.4px;
+          text-transform: none;
+          margin-bottom: 30px;
+        }
+
         .section-eyebrow-header {
           text-align: left;
           font-size: 13.5px;

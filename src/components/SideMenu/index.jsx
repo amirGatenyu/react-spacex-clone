@@ -9,28 +9,61 @@ export default function SideMenu(props) {
       }
     >
       <div className="inner-side-menu">
-        <a href="#">falcon 9</a>
-        <hr />
-        <a href="#">Falcon Heavy</a>
-        <hr />
-        <a href="#">dragon</a>
-        <hr />
-        <a href="#">starship</a>
-        <hr />
-        <a href="#">human spacelight</a>
-        <hr />
-        <a href="#">rideshare</a>
-        <hr />
-        <a href="#">mission</a>
-        <hr />
-        <a href="#">launches</a>
-        <hr />
-        <a href="#">careers</a>
-        <hr />
-        <a href="#">updates</a>
-        <hr />
-        <a href="#">shop</a>
-        <hr />
+        <ul>
+          <li>
+            <a href="#">falcon 9</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">Falcon Heavy</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">dragon</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">starship</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">human spacelight</a>
+            <hr />
+          </li>
+          <li>
+            <a href="#">rideshare</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">mission</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">launches</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">careers</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">updates</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#">shop</a>
+            <hr />
+          </li>
+        </ul>
       </div>
       {/* <div
         className={
