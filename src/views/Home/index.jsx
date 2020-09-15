@@ -54,8 +54,9 @@ export default function Home(props) {
         starShipLanding="05/01/20"
         headerText="NASA SELECTS LUNAR OPTIMIZED STARSHIP"
         description="NASA selected SpaceX to develop a lunar optimized Starship to transport crew between lunar orbit and the surface of the Moon as part of NASA’s Artemis program."
-        backgroundImage={NasaSelects}
+        imageBottom={NasaSelects}
         text="learn more"
+        belowImageSection={true}
       />
       <Footer />
     </div>
