@@ -25,7 +25,16 @@ export default function TopBar() {
             size={16}
             distance="sm"
             color="#fff"
+            // className="humborger"
           />
+          <div className="nav-desktop">
+            <a href="#">falcon 9</a>
+            <a href="#">falcon heavy</a>
+            <a href="#">dragon</a>
+            <a href="#">starship</a>
+            <a href="#">human spaceflight</a>
+            <a href="#">rideshare</a>
+          </div>
         </div>
       </div>
       {/* SideMenuSection */}
