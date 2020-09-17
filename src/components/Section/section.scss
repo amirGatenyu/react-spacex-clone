@@ -215,7 +215,7 @@
         }
       }
       .below-image-section {
-        width: 350px;
+        width: auto;
         padding: 0px 0px;
         color: black;
 
@@ -258,6 +258,15 @@
   }
   .section:nth-child(3) {
     .section-header {
+      margin-right: 55% !important;
+    }
+  }
+  // Last Section Styles
+  .section:nth-child(7) {
+    .section-header {
+      margin-right: 55% !important;
+    }
+    .description {
       margin-right: 55% !important;
     }
   }
