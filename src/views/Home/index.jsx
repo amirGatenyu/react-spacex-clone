@@ -14,7 +14,11 @@ import Footer from "../../components/Footer";
 
 // Desktop Images
 import StarlinkBackgroundDesktop from "../../assets/images/desktop/starlink_11_dekstop.webp";
-
+import SaocomDesktop from "../../assets/images/desktop/saocom1b_desktop.webp";
+import SplashdownDesktop from "../../assets/images/desktop/splashdown_1.webp";
+import StarShipDesktop from "../../assets/images/desktop/starshipliftoff_desktop1.webp";
+import ReturnHomeDesktop from "../../assets/images/desktop/home_demo2.webp";
+import NasaSelectsDesktop from "../../assets/images/desktop/home_moon.webp";
 import "./home.scss";
 
 export default function Home(props) {
@@ -23,36 +27,36 @@ export default function Home(props) {
   return (
     <div className="home-container-view">
       <Section
-        eyebrowText="Recent lunch"
+        eyebrowText={width > 768 ? "UPCOMING LAUNCH" : "Recent lunch"}
         headerText="Starlink Mission"
         // based on device width, send different background props
         backgroundImage={
           width > 768 ? StarlinkBackgroundDesktop : StarlinkBackgroundMobile
         }
-        text="replay"
+        text={width > 768 ? "watch" : "replay"}
         alignRight={true}
       />
       <Section
-        eyebrowText="Recent lunch"
+        eyebrowText={"Recent lunch"}
         headerText="SAOCOM 1B Mission"
-        backgroundImage={Saoc}
+        backgroundImage={width > 768 ? SaocomDesktop : Saoc}
         text="replay"
       />
       <Section
         eyebrowText="Mission Complete"
         headerText="Crew Dragon Returns from Space Station"
-        backgroundImage={Splash}
+        backgroundImage={width > 768 ? SplashdownDesktop : Splash}
         text="replay"
       />
       <Section
         headerText="Starship Takes Flight"
-        backgroundImage={StarShip}
+        backgroundImage={width > 768 ? StarShipDesktop : StarShip}
         text="replay"
       />
 
       <Section
         headerText="Returning Human Spaceflight to the United States"
-        backgroundImage={ReturningHuman}
+        backgroundImage={width > 762 ? ReturnHomeDesktop : ReturningHuman}
         text="learn more"
       />
       <Section
@@ -65,7 +69,7 @@ export default function Home(props) {
         starShipLanding="05/01/20"
         headerText="NASA SELECTS LUNAR OPTIMIZED STARSHIP"
         description="NASA selected SpaceX to develop a lunar optimized Starship to transport crew between lunar orbit and the surface of the Moon as part of NASA’s Artemis program."
-        imageBottom={NasaSelects}
+        imageBottom={width > 768 ? NasaSelectsDesktop : NasaSelects}
         text="learn more"
         belowImageSection={true}
       />
