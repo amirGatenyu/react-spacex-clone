@@ -1,13 +1,17 @@
 import React from "react";
 import Section from "../../components/Section";
-import StarlinkBackground from "../../assets/images/starlink_11_mobile.webp";
-import Saoc from "../../assets/images/saocom1b_mobile.webp";
-import Splash from "../../assets/images/splashdown_mobile.webp";
-import StarShip from "../../assets/images/starshipliftoff_mobile1.webp";
-import ReturningHuman from "../../assets/images/home_demo2_mobile.webp";
-import IssDocking from "../../assets/images/iss_docking_sim.webp";
-import NasaSelects from "../../assets/images/home_moon_mobile.webp";
+
+// Mobile Images
+import StarlinkBackground from "../../assets/images/mobile/starlink_11_mobile.webp";
+import Saoc from "../../assets/images/mobile/saocom1b_mobile.webp";
+import Splash from "../../assets/images/mobile/splashdown_mobile.webp";
+import StarShip from "../../assets/images/mobile/starshipliftoff_mobile1.webp";
+import ReturningHuman from "../../assets/images/mobile/home_demo2_mobile.webp";
+import IssDocking from "../../assets/images/mobile/iss_docking_sim.webp";
+import NasaSelects from "../../assets/images/mobile/home_moon_mobile.webp";
 import Footer from "../../components/Footer";
+
+// Desktop Images
 
 import "./home.scss";
 
