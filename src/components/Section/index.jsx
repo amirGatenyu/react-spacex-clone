@@ -19,15 +19,18 @@ export default function Section(props) {
               }}
             ></div>
           ) : null}
-
-          <div className="section-eyebrow-header">{props.eyebrowText}</div>
-          <div className="date">{props.starShipLanding}</div>
-          <div className="section-header">{props.headerText}</div>
-          <div className="description">{props.description}</div>
-          <Button
-            text={props.text}
-            externalLink="https://www.spacex.com/launches/"
-          />
+          <div
+            className={props.image ? "section-content test" : "section-content"}
+          >
+            <div className="section-eyebrow-header">{props.eyebrowText}</div>
+            <div className="date">{props.starShipLanding}</div>
+            <div className="section-header">{props.headerText}</div>
+            <div className="description">{props.description}</div>
+            <Button
+              text={props.text}
+              externalLink="https://www.spacex.com/launches/"
+            />
+          </div>
         </div>
       </div>
     );
@@ -49,7 +52,6 @@ export default function Section(props) {
               }}
             ></div>
           ) : null}
-
           <div className="section-eyebrow-header">{props.eyebrowText}</div>
           <div className="date">{props.starShipLanding}</div>
           <div className="section-header">{props.headerText}</div>
