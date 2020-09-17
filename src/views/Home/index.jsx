@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../../components/Section";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 // Mobile Images
 import StarlinkBackground from "../../assets/images/mobile/starlink_11_mobile.webp";
@@ -16,8 +17,10 @@ import Footer from "../../components/Footer";
 import "./home.scss";
 
 export default function Home(props) {
+  const { height, width } = useWindowDimensions();
   return (
     <div className="home-container-view">
+      <span>{width}</span>
       <Section
         eyebrowText="Recent lunch"
         headerText="Starlink Mission"
