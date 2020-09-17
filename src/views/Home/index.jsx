@@ -3,7 +3,7 @@ import Section from "../../components/Section";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 // Mobile Images
-import StarlinkBackground from "../../assets/images/mobile/starlink_11_mobile.webp";
+import StarlinkBackgroundMobile from "../../assets/images/mobile/starlink_11_mobile.webp";
 import Saoc from "../../assets/images/mobile/saocom1b_mobile.webp";
 import Splash from "../../assets/images/mobile/splashdown_mobile.webp";
 import StarShip from "../../assets/images/mobile/starshipliftoff_mobile1.webp";
@@ -13,18 +13,22 @@ import NasaSelects from "../../assets/images/mobile/home_moon_mobile.webp";
 import Footer from "../../components/Footer";
 
 // Desktop Images
+import StarlinkBackgroundDesktop from "../../assets/images/desktop/starlink_11_dekstop.webp";
 
 import "./home.scss";
 
 export default function Home(props) {
+  // Get width and height of device
   const { height, width } = useWindowDimensions();
   return (
     <div className="home-container-view">
-      <span>{width}</span>
       <Section
         eyebrowText="Recent lunch"
         headerText="Starlink Mission"
-        backgroundImage={StarlinkBackground}
+        // based on device width, send different background props
+        backgroundImage={
+          width > 768 ? StarlinkBackgroundDesktop : StarlinkBackgroundMobile
+        }
         text="replay"
         alignRight={true}
       />
