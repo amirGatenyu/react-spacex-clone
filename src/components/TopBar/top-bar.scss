@@ -18,6 +18,7 @@
     margin: 0 auto;
     text-align: left;
     box-sizing: border-box;
+    transition: opacity 0.2s ease-in-out;
     a {
       svg {
         margin-left: 16px;
@@ -38,6 +39,12 @@
     }
   }
 }
+
+.top-bar-inner.hide {
+  opacity: 0;
+  transform: opacity 0.5s ease;
+  pointer-events: none;
+}
 @media only screen and (min-width: 1200px) {
   .top-bar-container {
     position: fixed;
@@ -46,6 +53,7 @@
     width: 100vw;
     height: 100px;
     z-index: 100;
+    background-color: red;
     .top-bar-space {
     }
     .top-bar-inner {
