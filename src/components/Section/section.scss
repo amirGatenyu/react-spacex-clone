@@ -275,11 +275,22 @@
   }
   // Last Section Styles
   .section:nth-child(7) {
-    .section-header {
-      margin-right: 55% !important;
-    }
-    .description {
-      margin-right: 55% !important;
+    .inner-right-bottom {
+      width: 40%;
+      right: 0 !important;
+      bottom: 35% !important;
+      .section-content {
+        .section-header {
+          // margin-right: 55% !important;
+        }
+        .description {
+          text-transform: capitalize;
+          font-weight: 500;
+          line-height: 28px;
+          margin-bottom: 48px;
+          // margin-right: 55% !important;
+        }
+      }
     }
   }
 }
